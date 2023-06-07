@@ -1,0 +1,48 @@
+{
+    "name": "semaio/shopware-plugin-stock-updater-fix",
+    "description": "Fix StockUpdater to be independent from order status.",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "semaio GmbH",
+            "email": "support@semaio.com",
+            "role": "Manufacturer"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Semaio\\StockUpdaterFix\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Semaio\\StockUpdaterFix\\SemaioStockUpdaterFix",
+        "plugin-icon": "src/Resources/config/plugin.png",
+        "copyright": "semaio GmbH",
+        "label": {
+            "de-DE": "StockUpdater Fix",
+            "en-GB": "StockUpdater Fix"
+        },
+        "description": {
+            "de-DE": "Mit diesem Plugin werden die Lagerbestandsfelder der Produkte synchron gehalten und sind nicht länger vom Bestellstatus abhängig.",
+            "en-GB": "With this plugin you stock fields on product level will be kept synchronously and are no longer dependent on order status."
+        },
+        "manufacturerLink": {
+            "en-GB": "https://semaio.com",
+            "de-DE": "https://semaio.com"
+        },
+        "supportLink": {
+            "de-DE": "https://semaio.com",
+            "en-GB": "https://semaio.com"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": false
+        }
+    }
+}
